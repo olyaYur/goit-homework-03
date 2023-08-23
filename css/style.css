@@ -10,6 +10,22 @@ body {
 }
 
 /* скидаємо дефолтні стилі браузера*/
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .link {
     text-decoration: none;
 }
@@ -20,6 +36,13 @@ body {
 
 button {
     cursor: pointer;
+}
+
+/* створюємо клас контейнер*/
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;    
 }
 
 /*сss-змінні*/
@@ -53,6 +76,7 @@ button {
     text-transform: capitalize;
     text-align: center;
     letter-spacing: 0.02em; /*0.32px*/  /*it was mistarke*/
+    margin-bottom: 72px;
 }
 
 .title-third-level {
@@ -61,6 +85,7 @@ button {
     line-height: 1.2; /* 120%  24px*/
     color: var(--secondary-third-level-title-color);
     letter-spacing: 0.02em; /*0.32px*/ /* it was mistake*/
+    margin-bottom: 8px;
 }
 
 /* nav*/
@@ -105,6 +130,9 @@ button {
 /* section hero*/
 .segment-hero {
     background-color: var(--navyblue-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+
 }
 
 /* section our team */
@@ -124,6 +152,10 @@ button {
     background-color: var(--iris-color);
     border: none;
     line-height: 1.5; /*24px*/ /*it was mistake*/
+    padding: 16px 32px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 494px;
 }
 
 .btn-hero:hover,
@@ -144,4 +176,82 @@ button {
     color: var(--cloud-color);
 }
 
+/* розташування блоків*/
+
+.section {
+    padding: 120px 0;
+}
+.page-header-container,
+.main-navigation-container,
+.menu-list-container,
+.contacts-list-container {
+    display: flex;
+}
+
+.page-header-container {
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
+.main-navigation-container {
+    max-width: 452px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-list-container {
+    gap: 40px;
+}
+
+.page-contacts {
+    max-width: 676px;
+    width: 100%;
+}
+
+.contacts-list-container {
+    max-width: 344px;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 332px;
+}
+
+.title-first-level {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.advantages-list-container {
+    display: flex;
+    gap: 24px;
+}
+
+.our-team-list-container {
+    display: flex;
+    gap: 24px;
+}
+
+.our-team-item-card {
+    width: calc((100% - 72px) / 4);
+}
+
+.our-portfolio-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+
+.our-portfolio-item-card {
+    width: calc((100% - 48px) / 3);
+}
+
+.our-team-list .title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.our-team-list .text {
+    text-align: center;
+}
 
