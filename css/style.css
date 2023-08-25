@@ -66,7 +66,10 @@ button {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
     letter-spacing: 0.02em; /*0.32px*/  /*it was mistarke*/
-
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .title-secondary-level {
@@ -85,10 +88,17 @@ button {
     line-height: 1.2; /* 120%  24px*/
     color: var(--secondary-third-level-title-color);
     letter-spacing: 0.02em; /*0.32px*/ /* it was mistake*/
+    padding-top: 32px;
     margin-bottom: 8px;
 }
 
 /* nav*/
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
        /* logo*/
 .logotype-text-link {
     font-family: 'Raleway', sans-serif;
@@ -98,6 +108,7 @@ button {
     letter-spacing: 0.03em;  /* 0.54px*/
     text-transform: uppercase;
     color: var(--iris-color);
+    margin-right: 76px;
 }
 
 .logotype-text-studio {
@@ -114,6 +125,15 @@ button {
     color: var(--ocean-color);    /* it was mistake*/
 }
 
+.main-navigation {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
          /*контакти*/
 .page-contacts {
     font-style: normal; 
@@ -127,22 +147,67 @@ button {
 .page-contacts .contacts-item-link:focus {
     color: var(--ocean-color);
 }
+
+.contacts-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
 /* section hero*/
 .segment-hero {
     background-color: var(--navyblue-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
+}
 
+/*приховуємо контент*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+/*section our advantages*/
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+.advantages-item {
+    width: calc((100% - 72px) / 4);
 }
 
 /* section our team */
 .segment-our-team {
     background-color: var(--cloud-color);
+
+}
+.our-team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .our-team-item {
     background-color: var(--white-color);
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 255, .2);
 }
+.our-team-list .title {
+    text-align: center;
+}
+
+.our-team-list .text {
+    text-align: center;
+}
+
 
 /*button*/
 .btn-hero {
@@ -154,8 +219,6 @@ button {
     line-height: 1.5; /*24px*/ /*it was mistake*/
     padding: 16px 32px;
     border-radius: 5px;
-    display: inline-block;
-    margin-left: 494px;
 }
 
 .btn-hero:hover,
@@ -163,95 +226,50 @@ button {
     background-color: var(--ocean-color);
 }
 
-/*page footer*/
-.page-footer {
-    background-color: var(--navyblue-color);
-}
 
-.footer-text {
-    color: var(--cloud-color);
-}
-
-.logotype-text-studio-footer {
-    color: var(--cloud-color);
-}
 
 /* розташування блоків*/
 
 .section {
     padding: 120px 0;
 }
-.page-header-container,
-.main-navigation-container,
-.menu-list-container,
-.contacts-list-container {
-    display: flex;
+/* for section our team and our portfolio*/
+.text {
+    padding-bottom: 32px;
 }
 
-.page-header-container {
-    padding: 24px 0;
-    justify-content: space-between;
-}
 
-.main-navigation-container {
-    max-width: 452px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.menu-list-container {
-    gap: 40px;
-}
-
-.page-contacts {
-    max-width: 676px;
-    width: 100%;
-}
-
-.contacts-list-container {
-    max-width: 344px;
-    justify-content: space-between;
-    gap: 40px;
-    margin-left: 332px;
-}
-
-.title-first-level {
-    max-width: 496px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-}
-
-.advantages-list-container {
-    display: flex;
-    gap: 24px;
-}
-
-.our-team-list-container {
-    display: flex;
-    gap: 24px;
-}
-
-.our-team-item-card {
-    width: calc((100% - 72px) / 4);
-}
+/*section our portfolio*/ 
 
 .our-portfolio-list-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-
-.our-portfolio-item-card {
+.our-portfolio-item {
     width: calc((100% - 48px) / 3);
+    border-bottom: 1px solid rgba(46%, 47%, 66%, 8%);
 }
 
-.our-team-list .title {
-    text-align: center;
-    margin-bottom: 8px;
+
+/*page footer*/
+.page-footer {
+    background-color: var(--navyblue-color);
+    padding: 100px 0;
 }
 
-.our-team-list .text {
-    text-align: center;
+.footer-text {
+    color: var(--cloud-color);
+    width: 264px;
 }
 
+.logotype-text-studio-footer {
+    color: var(--cloud-color);
+}
+
+.logotype-link-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
