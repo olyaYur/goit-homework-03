@@ -41,7 +41,7 @@ button {
 /* створюємо клас контейнер*/
 .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
     margin: 0 auto;    
 }
 
@@ -92,6 +92,10 @@ button {
 
 /* nav*/
 
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header-container {
     display: flex;
     justify-content: space-between;
@@ -116,6 +120,7 @@ button {
 .menu-list .menu-item-link {
     font-weight: 500;
     color: var(--navyblue-color);
+    padding: 24px 0;
 }
 
 .menu-list .menu-item-link:hover,
@@ -125,6 +130,7 @@ button {
 
 .main-navigation {
     display: flex;
+    align-items: center;
 }
 
 .menu-list {
@@ -183,6 +189,11 @@ button {
     width: calc((100% - 72px) / 4);
 }
 
+.advantages-item-title {
+    margin-bottom: 8px;
+}
+
+
 /* section our team */
 .segment-our-team {
     background-color: var(--cloud-color);
@@ -205,6 +216,7 @@ button {
 }
 
 .our-team-title {
+    margin-bottom: 8px;
     text-align: center;
 }
 
@@ -222,7 +234,10 @@ button {
     border: none;
     line-height: 1.5; /*24px*/ /*it was mistake*/
     padding: 16px 32px;
-    border-radius: 5px;
+    border-radius: 4px;
+    display: block;
+    min-width: 169px;
+    margin: 0 auto;
 }
 
 .btn-hero:hover,
