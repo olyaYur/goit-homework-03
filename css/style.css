@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 } 
 
-ul {
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -23,7 +24,6 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
 }
 
 .link {
@@ -97,12 +97,12 @@ button {
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+padding: 24px 0;
 }
 
 .page-header-container {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
 }
        /* logo*/
 .logotype-text-link {
