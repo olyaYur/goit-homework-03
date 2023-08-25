@@ -88,8 +88,6 @@ button {
     line-height: 1.2; /* 120%  24px*/
     color: var(--secondary-third-level-title-color);
     letter-spacing: 0.02em; /*0.32px*/ /* it was mistake*/
-    padding-top: 32px;
-    margin-bottom: 8px;
 }
 
 /* nav*/
@@ -199,12 +197,18 @@ button {
     background-color: var(--white-color);
     width: calc((100% - 72px) / 4);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 255, .2);
+    border-radius: 0px 0px 4px 4px; /*it was mistake*/ 
 }
-.our-team-list .title {
+
+.name-value-container {
+    padding: 32px 0;
+}
+
+.our-team-title {
     text-align: center;
 }
 
-.our-team-list .text {
+.our-team-text {
     text-align: center;
 }
 
@@ -233,10 +237,6 @@ button {
 .section {
     padding: 120px 0;
 }
-/* for section our team and our portfolio*/
-.text {
-    padding-bottom: 32px;
-}
 
 
 /*section our portfolio*/ 
@@ -253,6 +253,15 @@ button {
     border-bottom: 1px solid rgba(46%, 47%, 66%, 8%);
 }
 
+.app-name-category-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.app-name-category-title {
+    margin-bottom: 8px;
+}
 
 /*page footer*/
 .page-footer {
